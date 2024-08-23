@@ -207,3 +207,27 @@
  
 
 }
+
+
+@media (max-width: 350px) {
+
+
+
+
+    .text{
+        scale: 0.65;
+        position: relative;
+        left: -12vw;
+        bottom: 9vh;
+    
+      }
+
+
+    .card {
+       
+        left: -14vw;
+        bottom: 12vh;
+        scale: 0.7;
+        width: 129vw;
+    }
+    }
