@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'akira';
+    src: url(fonts/Akira\ Expanded\ Demo.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+.container {
+    background-image: url(images/bg.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.text {
+    scale: 4;
+    position: relative;
+    left: 144vw;
+    bottom: 62vh;
+}
+
+
+.header1 {
+    color: antiquewhite;
+    -webkit-text-stroke: 0.5px white;
+    color: transparent;
+    font-family: "akira";
+    font-size: 6vh;
+    position: relative;
+    top: 28vh;
+    left: 6vh;
+    z-index: 10;
+}
+
+.header2 {
+    color: antiquewhite;
+    font-family: "akira";
+    font-size: 6vh;
+    position: relative;
+    top: 26vh;
+    left: 6vh;
+    z-index: 10;
+
+}
+
+.shadow {}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    /* background: linear-gradient(135deg, #6eb09f, #5b548a); */
+    background-color: rgb(82 82 82 / 33%);
+    backdrop-filter: blur(25px);
+    color: antiquewhite;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 35px;
+    z-index: 10;
+    position: relative;
+    scale: 0.85;
+    bottom: 28vh;
+    left: 35vw;
+}
+
+.card search {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+}
+
+.card search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-right: 16px;
+    z-index: 10;
+
+}
+
+.card search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.card search button img {
+    width: 16px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+
+.col {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+
+    .card {
+       
+        left: 20vw;
+        scale: 1.3;
+        bottom: 4vh;
+    }
+
+  .text{
+    scale: 2.5;
+    position: relative;
+    left: 28vw;
+    bottom: 35vh;
+
+  }
+
+}
+
+@media (max-width: 500px) {
+
+
+
+
+    .text{
+        scale: 0.65;
+        position: relative;
+        left: -11vw;
+        bottom: 9vh;
+    
+      }
+
+
+    .card {
+       
+        left: -6vw;
+        scale: 0.8;
+        width: 112vw;
+    }
+
+ 
+
+}
