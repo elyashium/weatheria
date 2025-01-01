@@ -1,2 +1,1 @@
-# WEATHERIA
-weather checking app
+
